@@ -1,10 +1,11 @@
 <main class="main">
   <header>
+    <a [routerLink]="['/']">
     <div class="brand-name">
-      <a [routerLink]="['/']">
-        <img class="brand-logo" src="./assets/logo.svg" alt="logo" aria-hidden="true" />
-      </a>
-    </div>
+        <img class="brand-logo" src="./assets/homes-logo-sm.png" alt="logo" aria-hidden="true" />
+        <h1>Homes</h1>
+      </div>
+    </a>
   </header>
   <section class="content">
     <router-outlet />

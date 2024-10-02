@@ -9,8 +9,18 @@ header {
   box-shadow: 0px 5px 25px var(--shadow-color);
 }
 
+.brand-logo {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 100%;
+  object-fit: cover;
+}
+
 .brand-name {
   margin: 0 0 0.5rem 1rem;
+  display: flex;
+  gap: 1rem;
+  color: var(--primary-color);
 }
 
 .main {
