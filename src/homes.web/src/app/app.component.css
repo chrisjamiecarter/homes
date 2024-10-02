@@ -38,8 +38,8 @@ header {
 }
 
 footer {
-  background-color: #0F0F0F;
-  color: #F0F0F0;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
   width: 100%;
 }
 
@@ -54,7 +54,7 @@ footer {
 
 .footer-icon {
   margin: 1rem;
-  fill: #F0F0F0;
+  fill: #f0f0f0;
   width: 2rem;
 }
 
@@ -64,5 +64,4 @@ footer {
   text-align: center;
   flex-grow: 1;
   margin-right: -3rem;
-
 }

@@ -16,14 +16,16 @@ export class HomeComponent {
   housingService: HousingService = inject(HousingService);
 
   housingLocationList: HousingLocation[] = [];
-  
+
   filteredLocationList: HousingLocation[] = [];
 
   constructor() {
-    this.housingService.getAllHousingLocations().then((housingLocationList: HousingLocation[]) => {
-      this.housingLocationList = housingLocationList;
-      this.filteredLocationList = housingLocationList;
-    });
+    this.housingService
+      .getAllHousingLocations()
+      .then((housingLocationList: HousingLocation[]) => {
+        this.housingLocationList = housingLocationList;
+        this.filteredLocationList = housingLocationList;
+      });
   }
 
   filterResults(text: string) {
@@ -31,8 +33,9 @@ export class HomeComponent {
       this.filteredLocationList = this.housingLocationList;
       return;
     }
-    this.filteredLocationList = this.housingLocationList.filter((housingLocation) =>
-      housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
+    this.filteredLocationList = this.housingLocationList.filter(
+      (housingLocation) =>
+        housingLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
   }
 }
