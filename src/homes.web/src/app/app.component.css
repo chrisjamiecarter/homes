@@ -1,0 +1,58 @@
+:host {
+  --content-padding: 10px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  padding: var(--content-padding);
+  box-shadow: 0px 5px 25px var(--shadow-color);
+}
+
+.brand-name {
+  margin: 0 0 0.5rem 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.content {
+  flex-grow: 1;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 100%;
+  padding: var(--content-padding);
+}
+
+footer {
+  background-color: #0F0F0F;
+  color: #F0F0F0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-icon {
+  margin: 1rem;
+  fill: #F0F0F0;
+  width: 2rem;
+}
+
+.footer-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  flex-grow: 1;
+  margin-right: -3rem;
+
+}
